@@ -1,0 +1,885 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\thism
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 172
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 40
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1494
+    content: "\e[?9001h\e[?1004h"
+  - delay: 198
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 14
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 299
+    content: 'PS C:\Users\thism> '
+  - delay: 992
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93mm\e[?25h"
+  - delay: 318
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 335
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;20Hmys\e[?25h"
+  - delay: 263
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;20Hmysq\e[?25h"
+  - delay: 217
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;20Hmysql\e[?25h"
+  - delay: 819
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;20Hmysql \e[?25h"
+  - delay: 389
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;20Hmysql \e[37m-\e[?25h"
+  - delay: 277
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;20Hmysql \e[90m-u\e[?25h"
+  - delay: 208
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[?25h"
+  - delay: 135
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 127
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 99
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 118
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 70
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 337
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 183
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 257
+    content: "\e[m"
+  - delay: 12
+    content: "\r\n"
+  - delay: 80
+    content: E
+  - delay: 15
+    content: 'nter password: '
+  - delay: 703
+    content: '*'
+  - delay: 498
+    content: "\r\n"
+  - delay: 127
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 21
+    content: "\e[?25l\r\nYour MariaDB connection id is 6\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\e[12;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 12322
+    content: c
+  - delay: 246
+    content: r
+  - delay: 124
+    content: e
+  - delay: 276
+    content: a
+  - delay: 226
+    content: t
+  - delay: 112
+    content: e
+  - delay: 319
+    content: ' '
+  - delay: 196
+    content: d
+  - delay: 252
+    content: a
+  - delay: 124
+    content: t
+  - delay: 111
+    content: a
+  - delay: 175
+    content: b
+  - delay: 105
+    content: a
+  - delay: 240
+    content: s
+  - delay: 237
+    content: e
+  - delay: 864
+    content: ' '
+  - delay: 945
+    content: b
+  - delay: 210
+    content: i
+  - delay: 181
+    content: a
+  - delay: 114
+    content: 'y'
+  - delay: 112
+    content: a
+  - delay: 645
+    content: _
+  - delay: 527
+    content: a
+  - delay: 121
+    content: 'n'
+  - delay: 255
+    content: t
+  - delay: 115
+    content: a
+  - delay: 116
+    content: r
+  - delay: 634
+    content: ;
+  - delay: 224
+    content: "\r\n"
+  - delay: 13
+    content: 'Query OK, 1 row affected (0.012 sec)'
+  - delay: 13
+    content: "\e[?25l\e[19;1HMariaDB [(none)]> \e[?25h"
+  - delay: 822
+    content: u
+  - delay: 124
+    content: s
+  - delay: 205
+    content: e
+  - delay: 171
+    content: ' '
+  - delay: 196
+    content: b
+  - delay: 231
+    content: i
+  - delay: 144
+    content: a
+  - delay: 121
+    content: 'y'
+  - delay: 109
+    content: a
+  - delay: 723
+    content: _
+  - delay: 374
+    content: a
+  - delay: 136
+    content: 'n'
+  - delay: 282
+    content: t
+  - delay: 124
+    content: a
+  - delay: 124
+    content: r
+  - delay: 878
+    content: ;
+  - delay: 218
+    content: "\r\n"
+  - delay: 16
+    content: "Database changed\r\nMariaDB [biaya_antar]> "
+  - delay: 23038
+    content: ^V
+  - delay: 812
+    content: "\e[?25l\e[21;24H  \e[21;24H\e[?25h"
+  - delay: 517
+    content: CREATE TABLE
+  - delay: 2679
+    content: ' '
+  - delay: 522
+    content: p
+  - delay: 121
+    content: e
+  - delay: 155
+    content: l
+  - delay: 162
+    content: a
+  - delay: 100
+    content: 'n'
+  - delay: 255
+    content: g
+  - delay: 131
+    content: g
+  - delay: 115
+    content: a
+  - delay: 189
+    content: 'n'
+  - delay: 201
+    content: ' '
+  - delay: 512
+    content: (
+  - delay: 672
+    content: "\r\n"
+  - delay: 30
+    content: '    -> '
+  - delay: 5631
+    content: ^V
+  - delay: 808
+    content: "\e[?25l\e[22;8H  \e[22;8H\e[?25h"
+  - delay: 472
+    content: " id_pelanggan INT AUTO_INCREMENT PRIMARY KEY,\r\n"
+  - delay: 20
+    content: "    ->     nama VARCHAR(100) NOT NULL,\r\n    ->     alamat VARCHAR(255) NOT NULL,\r\n    ->     telepon VARCHAR(20)\r\n    -> );"
+  - delay: 1071
+    content: "\r\n"
+  - delay: 41
+    content: 'Query OK, 0 rows affected (0.041 sec)'
+  - delay: 21
+    content: "\e[?25l\e[29;1HMariaDB [biaya_antar]> \e[?25h"
+  - delay: 8268
+    content: ^V
+  - delay: 618
+    content: "\e[?25l\e[29;24H  \e[29;24H\e[?25h"
+  - delay: 385
+    content: CREATE TABLE
+  - delay: 1003
+    content: ' '
+  - delay: 261
+    content: k
+  - delay: 246
+    content: u
+  - delay: 251
+    content: r
+  - delay: 205
+    content: i
+  - delay: 166
+    content: r
+  - delay: 346
+    content: ' '
+  - delay: 822
+    content: (
+  - delay: 1719
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 6769
+    content: ^V
+  - delay: 893
+    content: "\e[?25l\e[30;8H  \e[30;8H\e[?25h"
+  - delay: 3273
+    content: ^V
+  - delay: 878
+    content: "\e[?25l\e[30;8H  \e[30;8H\e[?25h"
+  - delay: 596
+    content: i
+  - delay: 210
+    content: d
+  - delay: 539
+    content: "\e[?25l\e[30;8H  \e[30;8H\e[?25h"
+  - delay: 6150
+    content: ^V
+  - delay: 848
+    content: "\e[?25l\e[30;8H  \e[30;8H\e[?25h"
+  - delay: 515
+    content: "id_kurir INT AUTO_INCREMENT PRIMARY KEY,\r\n"
+  - delay: 33
+    content: "    ->     nama_kurir VARCHAR(100) NOT NULL,\r\n    ->     kendaraan VARCHAR(50),\r\n    ->     tarif_per_km DECIMAL(10,2) NOT NULL\r\n    -> );"
+  - delay: 1027
+    content: "\r\n"
+  - delay: 34
+    content: "\e[?25lQuery OK, 0 rows affected (0.012 sec)\e[37;1HMariaDB [biaya_antar]> \e[?25h"
+  - delay: 7813
+    content: ^V
+  - delay: 582
+    content: "\e[?25l\e[37;24H  \e[37;24H\e[?25h"
+  - delay: 562
+    content: CREATE TABLE
+  - delay: 902
+    content: ' '
+  - delay: 261
+    content: a
+  - delay: 125
+    content: 'n'
+  - delay: 261
+    content: t
+  - delay: 117
+    content: a
+  - delay: 98
+    content: r
+  - delay: 306
+    content: ' '
+  - delay: 412
+    content: (
+  - delay: 656
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 8342
+    content: ^V
+  - delay: 638
+    content: "\e[?25l\e[38;8H  \e[38;8H\e[?25h"
+  - delay: 500
+    content: "id_antar INT AUTO_INCREMENT PRIMARY KEY,\r\n"
+  - delay: 21
+    content: "    ->     id_pelanggan INT NOT NULL,\r\n    ->     id_kurir INT NOT NULL,"
+  - delay: 1424
+    content: "\r\n"
+  - delay: 13
+    content: '    -> '
+  - delay: 8364
+    content: ^V
+  - delay: 813
+    content: "\e[?25l\e[40;8H  \e[40;8H\e[?25h"
+  - delay: 495
+    content: ' jarak DECIMAL(8,2) NOT NULL,'
+  - delay: 2558
+    content: "\r\n"
+  - delay: 34
+    content: '    -> '
+  - delay: 7643
+    content: ' biaya DECIMAL(10,2) NOT NULL, '
+  - delay: 1191
+    content: "\r\n"
+  - delay: 26
+    content: '    -> '
+  - delay: 7050
+    content: "tanggal DATE NOT NULL,\r\n    ->     \r\n    ->     FOREIGN KEY (id_pelanggan) REFERENCES pelanggan(id_pelanggan),\r\n    ->     FOREIGN KEY (id_kurir) REFERENCES kurir(id_kurir)\r"
+  - delay: 11
+    content: |2-
+
+          -> );
+  - delay: 1573
+    content: "\r\n"
+  - delay: 25
+    content: "Query OK, 0 rows affected (0.023 sec)\r\n"
+  - delay: 14
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 3219
+    content: s
+  - delay: 346
+    content: e
+  - delay: 156
+    content: l
+  - delay: 111
+    content: e
+  - delay: 280
+    content: c
+  - delay: 241
+    content: t
+  - delay: 616
+    content: "\e[?25l\e[40;24H      \e[40;24H\e[?25h"
+  - delay: 10892
+    content: ^V
+  - delay: 1077
+    content: "\e[?25l\e[40;24H  \e[40;24H\e[?25h"
+  - delay: 873
+    content: "INSERT INTO pelanggan (nama, alamat, telepon)\r\n    -> VALUES\r\n    -> ('Budi Santoso', 'Jalan Melati No.12, Jakarta', '081234567890'),\r"
+  - delay: 25
+    content: |2-
+
+          -> ('Siti Aminah', 'Jalan Kenanga No.45, Bekasi', '082345678901');
+  - delay: 1737
+    content: "\r\n"
+  - delay: 17
+    content: "Query OK, 2 rows affected (0.017 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 11
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 1205
+    content: s
+  - delay: 286
+    content: e
+  - delay: 151
+    content: l
+  - delay: 125
+    content: e
+  - delay: 189
+    content: c
+  - delay: 202
+    content: t
+  - delay: 261
+    content: ' '
+  - delay: 496
+    content: '*'
+  - delay: 306
+    content: ' '
+  - delay: 170
+    content: f
+  - delay: 181
+    content: r
+  - delay: 155
+    content: o
+  - delay: 312
+    content: m
+  - delay: 190
+    content: ' '
+  - delay: 276
+    content: t
+  - delay: 194
+    content: a
+  - delay: 261
+    content: b
+  - delay: 858
+    content: l
+  - delay: 135
+    content: e
+  - delay: 150
+    content: ' '
+  - delay: 868
+    content: p
+  - delay: 186
+    content: e
+  - delay: 152
+    content: l
+  - delay: 194
+    content: a
+  - delay: 140
+    content: 'n'
+  - delay: 399
+    content: g
+  - delay: 184
+    content: g
+  - delay: 184
+    content: a
+  - delay: 816
+    content: 'n'
+  - delay: 1773
+    content: ;
+  - delay: 475
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'table pelanggan\r\n\e[39;172Hn' at line 1"
+  - delay: 26
+    content: "\r\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 50742
+    content: s
+  - delay: 240
+    content: e
+  - delay: 115
+    content: l
+  - delay: 124
+    content: e
+  - delay: 249
+    content: c
+  - delay: 180
+    content: t
+  - delay: 259
+    content: ' '
+  - delay: 536
+    content: '*'
+  - delay: 366
+    content: ' '
+  - delay: 155
+    content: f
+  - delay: 192
+    content: r
+  - delay: 165
+    content: o
+  - delay: 230
+    content: m
+  - delay: 186
+    content: ' '
+  - delay: 313
+    content: p
+  - delay: 138
+    content: e
+  - delay: 207
+    content: l
+  - delay: 156
+    content: a
+  - delay: 118
+    content: 'n'
+  - delay: 246
+    content: g
+  - delay: 139
+    content: g
+  - delay: 138
+    content: a
+  - delay: 135
+    content: 'n'
+  - delay: 9
+    content: b
+  - delay: 863
+    content: "\e[?25l\e[40;38H\e[10X\e[?25h"
+  - delay: 757
+    content: p
+  - delay: 171
+    content: e
+  - delay: 190
+    content: l
+  - delay: 184
+    content: a
+  - delay: 122
+    content: 'n'
+  - delay: 210
+    content: g
+  - delay: 140
+    content: g
+  - delay: 106
+    content: a
+  - delay: 166
+    content: 'n'
+  - delay: 626
+    content: ;
+  - delay: 265
+    content: "\r\n"
+  - delay: 7
+    content: "+--------------+--------------+-----------------------------+--------------+\r\n| id_pelanggan | nama         | alamat                      | telepon      |\r\n+--------------+--------------+-----------------------------+--------------+\r\n|            1 | Budi Santoso | Jalan Melati No.12, Jakarta | 081234567890 |\r\n|            2 | Siti Aminah  | Jalan Kenanga No.45, Bekasi | 082345678901 |\r\n+--------------+--------------+-----------------------------+--------------+\r\n2 rows in set (0.006 sec)\r\n"
+  - delay: 14
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 12316
+    content: ^V
+  - delay: 767
+    content: "\e[?25l\e[40;24H  \e[40;24H\e[?25h"
+  - delay: 525
+    content: "INSERT INTO kurir (nama_kurir, kendaraan, tarif_per_km)\r\n    -> VALUES\r"
+  - delay: 12
+    content: "\n    -> ('Andi Wijaya', 'Motor', 2500.00),\r"
+  - delay: 5
+    content: |2-
+
+          -> ('Rina Lestari', 'Mobil', 4000.00);
+  - delay: 1307
+    content: "\r\nQuery OK, 2 rows affected (0.004 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 16
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 896
+    content: s
+  - delay: 237
+    content: e
+  - delay: 121
+    content: l
+  - delay: 100
+    content: e
+  - delay: 260
+    content: c
+  - delay: 260
+    content: t
+  - delay: 441
+    content: ' '
+  - delay: 673
+    content: '*'
+  - delay: 280
+    content: ' '
+  - delay: 257
+    content: f
+  - delay: 185
+    content: r
+  - delay: 121
+    content: o
+  - delay: 256
+    content: m
+  - delay: 891
+    content: ' '
+  - delay: 352
+    content: k
+  - delay: 240
+    content: u
+  - delay: 221
+    content: r
+  - delay: 120
+    content: i
+  - delay: 116
+    content: r
+  - delay: 877
+    content: ;
+  - delay: 222
+    content: "\r\n+----------+--------------+-----------+--------------+\r\n| id_kurir | nama_kurir   | kendaraan | tarif_per_km |\r\n+----------+--------------+-----------+--------------+\r\n|        1 | Andi Wijaya  | Motor     |      2500.00 |\r\n|        2 | Rina Lestari | Mobil     |      4000.00 |\r\n+----------+--------------+-----------+--------------+\r\n2 rows in set (0.001 sec)\r\n"
+  - delay: 7
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 8093
+    content: ^V
+  - delay: 752
+    content: "\e[?25l\e[40;24H  \e[40;24H\e[?25h"
+  - delay: 640
+    content: "INSERT INTO antar (id_pelanggan, id_kurir, jarak, biaya, tanggal)\r\n    -> VALUES\r\n    -> (1, 1, 10.5, (10.5 * 2500.00), '2026-01-06'),\r"
+  - delay: 14
+    content: |2-
+
+          -> (2, 2, 7.25, (7.25 * 4000.00), '2026-01-05');
+  - delay: 942
+    content: "\r\n"
+  - delay: 6
+    content: "Query OK, 2 rows affected (0.007 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 33
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 812
+    content: s
+  - delay: 235
+    content: e
+  - delay: 131
+    content: l
+  - delay: 104
+    content: e
+  - delay: 210
+    content: c
+  - delay: 196
+    content: t
+  - delay: 281
+    content: ' '
+  - delay: 477
+    content: '*'
+  - delay: 491
+    content: ' '
+  - delay: 276
+    content: f
+  - delay: 155
+    content: r
+  - delay: 129
+    content: o
+  - delay: 308
+    content: m
+  - delay: 1448
+    content: ' '
+  - delay: 362
+    content: a
+  - delay: 120
+    content: 'n'
+  - delay: 296
+    content: t
+  - delay: 191
+    content: a
+  - delay: 69
+    content: r
+  - delay: 728
+    content: ;
+  - delay: 256
+    content: "\r\n+----------+--------------+----------+-------+----------+------------+\r\n| id_antar | id_pelanggan | id_kurir | jarak | biaya    | tanggal    |\r\n+----------+--------------+----------+-------+----------+------------+"
+  - delay: 5
+    content: "\r\n|        1 |            1 |        1 | 10.50 | 26250.00 | 2026-01-06 |\r\n|        2 |            2 |        2 |  7.25 | 29000.00 | 2026-01-05 |\r\n+----------+--------------+----------+-------+----------+------------+\r\n2 rows in set (0.001 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 94694
+    content: s
+  - delay: 250
+    content: h
+  - delay: 237
+    content: o
+  - delay: 121
+    content: w
+  - delay: 390
+    content: ' '
+  - delay: 349
+    content: t
+  - delay: 125
+    content: a
+  - delay: 141
+    content: b
+  - delay: 345
+    content: l
+  - delay: 156
+    content: e
+  - delay: 260
+    content: s
+  - delay: 685
+    content: ;
+  - delay: 347
+    content: "\r\n"
+  - delay: 11
+    content: "+-----------------------+\r\n| Tables_in_biaya_antar |\r\n+-----------------------+\r\n| antar                 |\r\n| kurir                 |"
+  - delay: 8
+    content: "\r\n| pelanggan             |\r\n+-----------------------+\r\n3 rows in set (0.011 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 108402
+    content: ^V
+  - delay: 606
+    content: "\e[?25l\e[40;24H  \e[40;24H\e[?25h"
+  - delay: 584
+    content: "SELECT * FROM pelanggan\r\n"
+  - delay: 13
+    content: '    -> ORDER BY nama ASC;'
+  - delay: 1037
+    content: "\r\n+--------------+--------------+-----------------------------+--------------+\r\n| id_pelanggan | nama         | alamat                      | telepon      |\r\n+--------------+--------------+-----------------------------+--------------+\r\n|            1 | Budi Santoso | Jalan Melati No.12, Jakarta | 081234567890 |\r\n|            2 | Siti Aminah  | Jalan Kenanga No.45, Bekasi | 082345678901 |\r\n+--------------+--------------+-----------------------------+--------------+\r\n2 rows in set (0.004 sec)\r\n"
+  - delay: 9
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 8160
+    content: "SELECT * FROM antar\r\n"
+  - delay: 22
+    content: '    -> ORDER BY biaya DESC;'
+  - delay: 769
+    content: "\r\n+----------+--------------+----------+-------+----------+------------+\r\n| id_antar | id_pelanggan | id_kurir | jarak | biaya    | tanggal    |\r\n+----------+--------------+----------+-------+----------+------------+\r\n|        2 |            2 |        2 |  7.25 | 29000.00 | 2026-01-05 |\r\n|        1 |            1 |        1 | 10.50 | 26250.00 | 2026-01-06 |\r\n+----------+--------------+----------+-------+----------+------------+\r\n2 rows in set (0.004 sec)\r\n"
+  - delay: 14
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 8401
+    content: "SELECT * FROM antar\r\n"
+  - delay: 18
+    content: '    -> ORDER BY tanggal DESC, biaya ASC;'
+  - delay: 837
+    content: "\r\n+----------+--------------+----------+-------+----------+------------+\r\n| id_antar | id_pelanggan | id_kurir | jarak | biaya    | tanggal    |\r\n+----------+--------------+----------+-------+----------+------------+\r\n|        1 |            1 |        1 | 10.50 | 26250.00 | 2026-01-06 |\r\n|        2 |            2 |        2 |  7.25 | 29000.00 | 2026-01-05 |\r\n+----------+--------------+----------+-------+----------+------------+\r\n2 rows in set (0.001 sec)\r\n"
+  - delay: 12
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 10962
+    content: "SELECT id_pelanggan, COUNT(*) AS jumlah_antar\r\n    -> FROM antar\r"
+  - delay: 22
+    content: |2-
+
+          -> GROUP BY id_pelanggan;
+  - delay: 893
+    content: "\r\n"
+  - delay: 12
+    content: "+--------------+--------------+\r\n| id_pelanggan | jumlah_antar |\r\n+--------------+--------------+\r\n|            1 |            1 |\r\n|            2 |            1 |\r\n+--------------+--------------+\r\n2 rows in set (0.012 sec)\r\n"
+  - delay: 13
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 9467
+    content: "SELECT id_pelanggan, SUM(biaya) AS total_biaya\r\n    -> FROM antar\r"
+  - delay: 15
+    content: |2-
+
+          -> GROUP BY id_pelanggan;
+  - delay: 979
+    content: "\r\n+--------------+-------------+\r\n| id_pelanggan | total_biaya |\r\n+--------------+-------------+\r\n|            1 |    26250.00 |\r\n|            2 |    29000.00 |\r\n+--------------+-------------+\r\n2 rows in set (0.002 sec)\r\n"
+  - delay: 14
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 7476
+    content: "SELECT id_kurir, SUM(biaya) AS total_biaya\r\n    -> FROM antar\r"
+  - delay: 24
+    content: |2-
+
+          -> GROUP BY id_kurir;
+  - delay: 809
+    content: "\r\n+----------+-------------+\r\n| id_kurir | total_biaya |\r\n+----------+-------------+\r\n|        1 |    26250.00 |\r\n|        2 |    29000.00 |\r\n+----------+-------------+\r\n2 rows in set (0.001 sec)\r\n"
+  - delay: 12
+    content: "\nMariaDB [biaya_antar]>\e[1C"
+  - delay: 1350
+    content: e
+  - delay: 529
+    content: x
+  - delay: 263
+    content: i
+  - delay: 177
+    content: t
+  - delay: 980
+    content: ;
+  - delay: 1087
+    content: "\r\nBye"
+  - delay: 17
+    content: "\r\n"
+  - delay: 42
+    content: 'PS C:\Users\thism> '
+  - delay: 1414
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93mE\e[?25h"
+  - delay: 480
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\bEX\e[?25h"
+  - delay: 246
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[40;20HEXI\e[?25h"
+  - delay: 542
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[92m\e[40;20HEXIT\e[?25h"
+  - delay: 773
+    content: "\e[m"
+  - delay: 10
+    content: "\r\n"
